@@ -8,8 +8,8 @@ include .env
 #export TF_VAR_location
 
 #VARS=variables/terraform-$(ENV).tfvars
-
-export GOOGLE_CREDENTIALS
+#GOOGLE_CREDENTIALS=$(source cat keys/mbelousov7-terraform-stage.json)
+export GOOGLE_CREDENTIALS=$(source cat keys/mbelousov7-terraform-stage.json)
 
 build:
 	docker build -t drjetf/terraform:2.0 .

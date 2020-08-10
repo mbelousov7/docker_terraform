@@ -10,6 +10,3 @@ COPY *.tfvars /terraform
 
 
 RUN ["terraform", "init", "-backend=false"]
-
-
-ENTRYPOINT ["terraform", "init"]
